@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+</head>
+<body>
+
+	<h1>Feedback Form</h1>
+
+    <style>
+        body {
+  background-color: #5cdb95;
+}
+
+        form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #34a853;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #228b3d;
+}
+
+      </style>
+
+    <form
+  action="https://formspree.io/f/mpzekkkr"
+  method="POST"
+>
+<label for="name">Name:
+		<input type="text" id="name" name="name" required><br>
+    </label>
+  <label>
+    Email:
+    <input type="email" name="email"><br>
+  </label>
+  <label>
+    Feedback:
+    <textarea name="message"></textarea><br>
+  </label>
+  <label>
+    Suggestion:
+    <textarea name="message"></textarea><br>
+  </label>
+  <button type="submit">Send</button>
+</form>
+
+
+</body>
+</html>
